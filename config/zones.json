@@ -1,0 +1,26 @@
+{
+  "frame_width": 1280,
+  "frame_height": 720,
+  "zones": [
+    {
+      "id": "DANGER_ZONE",
+      "type": "polygon",
+      "severity":"high",
+      "points": [[0, 0], [1920, 0], [1920, 1080], [0, 1080]],
+      "color_hint": "red"
+    }
+   
+  ],
+  "overlay": {
+    "show_zone_labels": true,
+    "line_thickness": 2
+  },
+  
+  "detector": {
+    "target_classes": ["kamizelka"],
+    "conf": 0.25,
+    "iou": 0.5,
+    "imgsz": 1280
+  }
+
+}
